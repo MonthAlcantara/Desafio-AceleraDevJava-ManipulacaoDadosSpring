@@ -1,6 +1,7 @@
 package com.challenge.repository;
 
 import com.challenge.entity.Submission;
+import com.challenge.entity.SubmissionId;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface SubmissionRepository extends JpaRepository<Submission, Long> {
+public interface SubmissionRepository extends JpaRepository<Submission, SubmissionId> {
 
     @Query(" select max(s.score) from Submission s " +
             " join s.id.challenge cha " +

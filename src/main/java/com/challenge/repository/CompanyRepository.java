@@ -12,7 +12,7 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 
     Optional<Company> findById(Long id);
 
-    List<Company> findByCandidatesIdAccelerationId(Long accelerationId);
+    List<Company> findDistinctByCandidatesIdAccelerationId(Long accelerationId);
 
     List<Company> findByCandidatesIdUserId(Long userId);
 }

@@ -17,7 +17,7 @@ public class AccelerationService implements AccelerationServiceInterface {
 
     @Override
     public Optional<Acceleration> findById(Long id) {
-        return Optional.empty();
+        return repository.findById(id);
     }
 
     @Override

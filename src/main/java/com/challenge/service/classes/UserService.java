@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import static java.time.LocalDateTime.now;
+
 @Service
 @AllArgsConstructor
 public class UserService implements UserServiceInterface {
@@ -34,6 +36,7 @@ public class UserService implements UserServiceInterface {
 
     @Override
     public User save(User object) {
+        object.setCreatedAt(now());
         return repository.save(object);
     }
 }
