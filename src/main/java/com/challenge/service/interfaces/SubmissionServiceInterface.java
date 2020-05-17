@@ -1,9 +1,11 @@
 package com.challenge.service.interfaces;
 
 import com.challenge.entity.Submission;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.List;
+
 
 public interface SubmissionServiceInterface extends ServiceInterface<Submission> {
 

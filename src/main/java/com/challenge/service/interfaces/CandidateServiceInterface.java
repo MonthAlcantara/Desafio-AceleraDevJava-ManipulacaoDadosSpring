@@ -2,9 +2,11 @@ package com.challenge.service.interfaces;
 
 import com.challenge.entity.Candidate;
 import com.challenge.entity.CandidateId;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public interface CandidateServiceInterface extends ServiceInterface<Candidate> {
 

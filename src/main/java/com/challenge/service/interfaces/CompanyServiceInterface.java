@@ -1,9 +1,11 @@
 package com.challenge.service.interfaces;
 
 import com.challenge.entity.Company;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public interface CompanyServiceInterface extends ServiceInterface<Company> {
 
