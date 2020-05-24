@@ -36,7 +36,6 @@ public class UserService implements UserServiceInterface {
 
     @Override
     public User save(User object) {
-        object.setCreatedAt(now());
         return repository.save(object);
     }
 }
